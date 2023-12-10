@@ -1,0 +1,20 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_LEFT_PATCHED_BROKEN_PIN6
+
+# Lets call the board what it is actually named...
+config ZMK_KEYBOARD_NAME
+    default "Ferris Sweep"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_LEFT_PATCHED_BROKEN_PIN6 || SHIELD_CRADIO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
