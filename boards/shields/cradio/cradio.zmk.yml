@@ -9,5 +9,5 @@ features:
   - keys
 siblings:
   - cradio_left
-  - cradio_left_with_broken_pin
+  - cradio_left_patched_broken_pin6
   - cradio_right

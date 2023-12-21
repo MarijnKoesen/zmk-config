@@ -1,0 +1,321 @@
+# Find all possible config values with:
+#  $) keymap dump-config
+
+draw_config:
+  outer_pad_w: 80.0
+  outer_pad_h: 56.0
+  svg_style: |
+    /* inherit to force styles through use tags */
+    svg path {
+        fill: inherit;
+    }
+
+    /* font and background color specifications */
+    svg.keymap {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 14px;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: #24292e;
+    }
+
+    /* default key styling */
+    rect.key {
+        fill: #f6f8fa;
+        stroke: #c9cccf;
+        stroke-width: 1;
+    }
+
+    /* default key side styling, only used is draw_key_sides is set */
+    rect.side {
+        filter: brightness(90%);
+    }
+
+    /* color accent for combo boxes */
+    rect.combo, rect.combo-separate {
+        fill: #cdf;
+    }
+
+    /* color accent for held keys */
+    rect.held, rect.combo.held {
+        fill: #fdd;
+    }
+
+    /* color accent for ghost (optional) keys */
+    rect.ghost, rect.combo.ghost {
+        stroke-dasharray: 4, 4;
+        stroke-width: 2;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+
+    /* styling for layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        stroke: white;
+        stroke-width: 2;
+        paint-order: stroke;
+    }
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 11px;
+    }
+
+    text.hold {
+        text-anchor: middle;
+        dominant-baseline: auto;
+    }
+
+    text.shifted {
+        text-anchor: middle;
+        dominant-baseline: hanging;
+    }
+
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans {
+        fill: #7b7e81;
+    }
+
+    /* styling for combo dendrons */
+    path.combo {
+        stroke-width: 1;
+        stroke: gray;
+        fill: none;
+    }
+
+    /* Start Tabler Icons Cleanup */
+    /* cannot use height/width with glyphs */
+    .icon-tabler > path {
+        fill: inherit;
+        stroke: inherit;
+        stroke-width: 2;
+    }
+    /* hide tabler's default box */
+    .icon-tabler > path[stroke="none"][fill="none"] {
+        visibility: hidden;
+    }
+    /* End Tabler Icons Cleanup */
+            svg > g:nth-of-type(2) .keypos-0 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-21 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-26 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-5 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(5) .keypos-13 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-12 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-1 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-29 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-32 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-20 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-22 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-28 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(4) .keypos-13 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-30 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-24 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-27 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-31 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-19 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-9 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-23 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-8 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-10 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(1) .keypos-32 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-6 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(3) .keypos-25 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-15 rect { fill: #FFFFFF; }
+            svg > g:nth-of-type(2) .keypos-6 rect { fill: #FFFEFE; }
+            svg > g:nth-of-type(2) .keypos-18 rect { fill: #FFFEFE; }
+            svg > g:nth-of-type(3) .keypos-33 rect { fill: #FFFEFE; }
+            svg > g:nth-of-type(2) .keypos-7 rect { fill: #FFFEFE; }
+            svg > g:nth-of-type(2) .keypos-28 rect { fill: #FFFDFD; }
+            svg > g:nth-of-type(3) .keypos-29 rect { fill: #FFFDFD; }
+            svg > g:nth-of-type(1) .keypos-0 rect { fill: #FFFDFD; }
+            svg > g:nth-of-type(3) .keypos-10 rect { fill: #FFFDFD; }
+            svg > g:nth-of-type(2) .keypos-16 rect { fill: #FFFCFC; }
+            svg > g:nth-of-type(2) .keypos-17 rect { fill: #FFFCFC; }
+            svg > g:nth-of-type(1) .keypos-9 rect { fill: #FFFCFC; }
+            svg > g:nth-of-type(3) .keypos-11 rect { fill: #FFFCFC; }
+            svg > g:nth-of-type(2) .keypos-27 rect { fill: #FFFCFC; }
+            svg > g:nth-of-type(3) .keypos-5 rect { fill: #FFFBFB; }
+            svg > g:nth-of-type(3) .keypos-22 rect { fill: #FFFAFA; }
+            svg > g:nth-of-type(2) .keypos-26 rect { fill: #FFFAFA; }
+            svg > g:nth-of-type(2) .keypos-13 rect { fill: #FFFAFA; }
+            svg > g:nth-of-type(1) .keypos-20 rect { fill: #FFF9F9; }
+            svg > g:nth-of-type(3) .keypos-13 rect { fill: #FFF9F9; }
+            svg > g:nth-of-type(2) .keypos-33 rect { fill: #FFF8F8; }
+            svg > g:nth-of-type(2) .keypos-25 rect { fill: #FFF7F7; }
+            svg > g:nth-of-type(1) .keypos-21 rect { fill: #FFF7F7; }
+            svg > g:nth-of-type(1) .keypos-29 rect { fill: #FFF7F7; }
+            svg > g:nth-of-type(1) .keypos-5 rect { fill: #FFF7F7; }
+            svg > g:nth-of-type(3) .keypos-12 rect { fill: #FFF6F6; }
+            svg > g:nth-of-type(1) .keypos-27 rect { fill: #FFF6F6; }
+            svg > g:nth-of-type(1) .keypos-8 rect { fill: #FFF4F4; }
+            svg > g:nth-of-type(1) .keypos-2 rect { fill: #FFF1F1; }
+            svg > g:nth-of-type(3) .keypos-15 rect { fill: #FFF1F1; }
+            svg > g:nth-of-type(1) .keypos-28 rect { fill: #FFF1F1; }
+            svg > g:nth-of-type(1) .keypos-14 rect { fill: #FFEFEF; }
+            svg > g:nth-of-type(1) .keypos-25 rect { fill: #FFEEEE; }
+            svg > g:nth-of-type(1) .keypos-26 rect { fill: #FFECEC; }
+            svg > g:nth-of-type(1) .keypos-3 rect { fill: #FFEAEA; }
+            svg > g:nth-of-type(1) .keypos-24 rect { fill: #FFEAEA; }
+            svg > g:nth-of-type(1) .keypos-15 rect { fill: #FFE5E5; }
+            svg > g:nth-of-type(1) .keypos-4 rect { fill: #FFE4E4; }
+            svg > g:nth-of-type(1) .keypos-12 rect { fill: #FFE4E4; }
+            svg > g:nth-of-type(1) .keypos-22 rect { fill: #FFDFDF; }
+            svg > g:nth-of-type(3) .keypos-18 rect { fill: #FFDFDF; }
+            svg > g:nth-of-type(3) .keypos-16 rect { fill: #FFDEDE; }
+            svg > g:nth-of-type(1) .keypos-33 rect { fill: #FFDCDC; }
+            svg > g:nth-of-type(1) .keypos-23 rect { fill: #FFDADA; }
+            svg > g:nth-of-type(1) .keypos-11 rect { fill: #FFD6D6; }
+            svg > g:nth-of-type(1) .keypos-7 rect { fill: #FFD3D3; }
+            svg > g:nth-of-type(1) .keypos-18 rect { fill: #FFD2D2; }
+            svg > g:nth-of-type(3) .keypos-7 rect { fill: #FFD1D1; }
+            svg > g:nth-of-type(3) .keypos-17 rect { fill: #FFD1D1; }
+            svg > g:nth-of-type(1) .keypos-6 rect { fill: #FFCFCF; }
+            svg > g:nth-of-type(1) .keypos-16 rect { fill: #FFCDCD; }
+            svg > g:nth-of-type(3) .keypos-20 rect { fill: #FFCDCD; }
+            svg > g:nth-of-type(1) .keypos-19 rect { fill: #FFCDCD; }
+            svg > g:nth-of-type(1) .keypos-1 rect { fill: #FFCCCC; }
+            svg > g:nth-of-type(1) .keypos-13 rect { fill: #FFC8C8; }
+            svg > g:nth-of-type(1) .keypos-17 rect { fill: #FFB7B7; }
+            svg > g:nth-of-type(3) .keypos-23 rect { fill: #FFADAD; }
+            svg > g:nth-of-type(1) .keypos-10 rect { fill: #FFA7A7; }
+            svg > g:nth-of-type(1) .keypos-30 rect { fill: #FF7777; }
+            svg > g:nth-of-type(1) .keypos-31 rect { fill: #FF2F2F; }
+            .combopos-16 rect { fill: #FFFFFF; }
+            .combopos-6 rect { fill: #FFFFFF; }
+            .combopos-19 rect { fill: #FFFFFF; }
+            .combopos-23 rect { fill: #FFFFFF; }
+            .combopos-12 rect { fill: #FFFFFF; }
+            .combopos-18 rect { fill: #FFFFFF; }
+            .combopos-15 rect { fill: #FFFFFF; }
+            .combopos-29 rect { fill: #FFFFFF; }
+            .combopos-5 rect { fill: #FFFFFF; }
+            .combopos-22 rect { fill: #FFFFFF; }
+            .combopos-7 rect { fill: #FFFFFF; }
+            .combopos-2 rect { fill: #FFFFFF; }
+            .combopos-33 rect { fill: #FFFFFF; }
+            .combopos-28 rect { fill: #FFFFFF; }
+            .combopos-21 rect { fill: #FFFFFF; }
+            .combopos-26 rect { fill: #FFFFFF; }
+            .combopos-25 rect { fill: #FFFEFE; }
+            .combopos-32 rect { fill: #FFFEFE; }
+            .combopos-14 rect { fill: #FFFDFD; }
+            .combopos-24 rect { fill: #FFFDFD; }
+            .combopos-20 rect { fill: #FFFDFD; }
+            .combopos-27 rect { fill: #FFFDFD; }
+            .combopos-11 rect { fill: #FFFCFC; }
+            .combopos-30 rect { fill: #FFFCFC; }
+            .combopos-31 rect { fill: #FFFBFB; }
+            .combopos-9 rect { fill: #FFFAFA; }
+            .combopos-10 rect { fill: #FFFAFA; }
+            .combopos-3 rect { fill: #FFF7F7; }
+            .combopos-0 rect { fill: #FFE7E7; }
+            .combopos-8 rect { fill: #FF0000; }
+
+  svg_extra_style: ''
+  shrink_wide_legends: 7
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
+
+parse_config:
+  trans_legend:
+    t: ''
+  zmk_keycode_map: 
+    'LG(RBKT)': 'FWD'
+    'LG(LBKT)': 'BACK'
+    'LG(LS(RBKT))': 'NEXT TAB'
+    'LG(LS(LBKT))': 'PREV TAB'
+    'LS(LC(LA(Q)))': '$$mdi:star-three-points$$ Q'
+    'FSLH': {t: /, s: '?'}
+    'COMMA': {t: ',', s: '<'}
+    'DOT': {t: '.', s: '>'}
+    'SQT': {t: '''', s: '"'}
+    'N1': {t: 1, s: '!'}
+    'N2': {t: 2, s: '@'}
+    'N3': {t: 3, s: '#'}
+    'N4': {t: 4, s: '$'}
+    'N5': {t: 5, s: '%'}
+    'N6': {t: 6, s: '^'}
+    'N7': {t: 7, s: '&'}
+    'N8': {t: 8, s: '*'}
+    'N9': {t: 9, s: '('}
+    'N0': {t: 0, s: ')'}
+    LBKT: {t: '[', s: '{'}
+    RBKT: {t: ']', s: '}'}
+    BSLH: {t: '\', s: '|'}
+    MINUS: {t: '-', s: '_'}
+    EQUAL: {t: '=', s: '!'}
+    SEMI: {t: ';', s: ':'}
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    PLUS: +
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+  zmk_combos: {
+    "combo_bootloader": {"align": "left", "offset": 0.5},
+  }
