@@ -1,0 +1,13 @@
+file_format: "1"
+id: ferris_sweep
+name: Cradio/Sweep
+type: shield
+url: https://github.com/davidphilipbarr/Sweep
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - ferris_sweep_left
+  - ferris_sweep_left_patched_broken_pin6
+  - ferris_sweep_right

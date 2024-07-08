@@ -190,36 +190,37 @@ draw_config:
             svg > g:nth-of-type(1) .keypos-10 rect { fill: #FFA7A7; }
             svg > g:nth-of-type(1) .keypos-30 rect { fill: #FF7777; }
             svg > g:nth-of-type(1) .keypos-31 rect { fill: #FF2F2F; }
-            .combopos-16 rect { fill: #FFFFFF; }
-            .combopos-6 rect { fill: #FFFFFF; }
-            .combopos-19 rect { fill: #FFFFFF; }
-            .combopos-23 rect { fill: #FFFFFF; }
-            .combopos-12 rect { fill: #FFFFFF; }
-            .combopos-18 rect { fill: #FFFFFF; }
-            .combopos-15 rect { fill: #FFFFFF; }
-            .combopos-29 rect { fill: #FFFFFF; }
-            .combopos-5 rect { fill: #FFFFFF; }
-            .combopos-22 rect { fill: #FFFFFF; }
-            .combopos-7 rect { fill: #FFFFFF; }
-            .combopos-2 rect { fill: #FFFFFF; }
-            .combopos-33 rect { fill: #FFFFFF; }
-            .combopos-28 rect { fill: #FFFFFF; }
-            .combopos-21 rect { fill: #FFFFFF; }
-            .combopos-26 rect { fill: #FFFFFF; }
-            .combopos-25 rect { fill: #FFFEFE; }
-            .combopos-32 rect { fill: #FFFEFE; }
-            .combopos-14 rect { fill: #FFFDFD; }
-            .combopos-24 rect { fill: #FFFDFD; }
-            .combopos-20 rect { fill: #FFFDFD; }
-            .combopos-27 rect { fill: #FFFDFD; }
-            .combopos-11 rect { fill: #FFFCFC; }
-            .combopos-30 rect { fill: #FFFCFC; }
-            .combopos-31 rect { fill: #FFFBFB; }
-            .combopos-9 rect { fill: #FFFAFA; }
-            .combopos-10 rect { fill: #FFFAFA; }
-            .combopos-3 rect { fill: #FFF7F7; }
-            .combopos-0 rect { fill: #FFE7E7; }
-            .combopos-8 rect { fill: #FF0000; }
+            .combopos-17 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-6 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-19 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-16 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-12 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-18 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-5 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-7 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-22 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-2 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-23 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-15 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-28 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-33 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-29 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-26 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-21 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-25 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFFFF; }
+            .combopos-32 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFEFE; }
+            .combopos-14 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFEFE; }
+            .combopos-20 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFDFD; }
+            .combopos-27 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFDFD; }
+            .combopos-24 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFDFD; }
+            .combopos-30 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFDFD; }
+            .combopos-11 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFDFD; }
+            .combopos-10 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFBFB; }
+            .combopos-31 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFFBFB; }
+            .combopos-9 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFF9F9; }
+            .combopos-3 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFF8F8; }
+            .combopos-0 rect { stroke: #c9cccf; stroke-width: 1; fill: #FFE1E1; }
+            .combopos-8 rect { stroke: #c9cccf; stroke-width: 1; fill: #FF0000; }
 
   svg_extra_style: ''
   shrink_wide_legends: 7

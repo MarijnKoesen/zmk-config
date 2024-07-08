@@ -1,0 +1,33 @@
+# Find all possible config values with:
+#  $) keymap dump-config
+
+draw_config:
+  key_w: 90 # 60
+  key_h: 84 # 56
+  inner_pad_w: 5
+  inner_pad_h: 5
+  outer_pad_w: 180.0
+  outer_pad_h: 56.0
+  combo_w: 42 # 28
+  combo_h: 39 # 26
+  key_side_pars:       
+    rel_x: 0
+    rel_y: 4
+    rel_w: 120
+    rel_h: 12
+    rx: 41
+    ry: 41 
+  svg_extra_style: |
+    svg.keymap {
+        font-size: 20px;
+    }
+  glyph_tap_size: 20
+  glyph_hold_size: 16
+  glyph_shifted_size: 30
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true

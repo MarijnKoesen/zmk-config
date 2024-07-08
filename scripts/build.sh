@@ -1,5 +1,9 @@
 #!/bin/bash
-
+# The easy way to run this is using docker:
+#   $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.2 /bin/bash
+#   #) cd /code
+#   #) ./scripts/compile.sh
+#  
 set -e
 
 cd "$(dirname "$0")/../"
