@@ -1,3 +1,5 @@
+// Copied from: https://github.com/urob/zmk-nodefree-config/tree/8506dbaaee9b46d200aa553a94b6dbca8560a5e1/keypos_def
+
 /*                              34 KEY MATRIX / LAYOUT MAPPING
 
   ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮

@@ -1,0 +1,11 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_FERRIS_SWEEP_LEFT_PATCHED_BROKEN_PIN6
+	def_bool $(shields_list_contains,FERRIS_SWEEP_left_patched_broken_pin6)
+
+config SHIELD_FERRIS_SWEEP_LEFT
+	def_bool $(shields_list_contains,FERRIS_SWEEP_left)
+
+config SHIELD_FERRIS_SWEEP_RIGHT
+	def_bool $(shields_list_contains,FERRIS_SWEEP_right)
