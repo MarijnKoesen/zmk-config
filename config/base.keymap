@@ -49,8 +49,8 @@
 #define SW_WIN &kp UP
 #define SW_APP &kp UP
 #define MEH(key) &kp LS(LC(LA(key)))
-#define VOL_UP &kp C_VOL_UP
-#define VOL_DN &kp C_VOL_DOWN
+#define VOL_UP &kp C_VOLUME_UP
+#define VOL_DN &kp C_VOLUME_DOWN
 
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
@@ -183,10 +183,10 @@ SIMPLE_MORPH(rpar_gt, SFT, &kp RPAR, &kp GT)
             bindings = <
         //╭──────╮ ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮ ╭──────╮
         //       │            │          │          │          │          │   │ Vol Up   │ F7       │ F8       │ F9       │ F10      │
-            X_LT     &trans     &trans     &trans     &trans     &trans         &trans     &kp F7     &kp F8     &kp F9     &kp F10      X_RT
+            X_LT     &trans     &trans     &trans     &trans     &trans         VOL_UP     &kp F7     &kp F8     &kp F9     &kp F10      X_RT
         //├──────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────┤
         //                    │          │          │          │          │   │ Vol Down │ F4       │ F5       │ F6       │ F11      │
-            X_LM     &trans     &trans     &trans     &trans     &trans         &trans     &kp F4     &kp F5     &kp F6     &kp F11      X_RM
+            X_LM     &trans     &trans     &trans     &trans     &trans         VOL_DN     &kp F4     &kp F5     &kp F6     &kp F11      X_RM
         //├──────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────┤
         //         │          │          │          │          │          │   │          │ F1       │ F2       │ F3       │ F12      │
             X_LB     &trans     &trans     &trans     &trans     &trans         &trans     &kp F1     &kp F2     &kp F3     &kp F12      X_RB
