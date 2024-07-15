@@ -4,11 +4,11 @@
 #define X_LT &kp TAB // top row, left
 #define X_LM &kp BSPC // middle row, left
 #define X_LB &none // bottom row, left
-#define X_LH &none // thumb row, left
+#define X_LH &kp LGUI // thumb row, left
 
 /* right of right half */
-#define X_RT &none // top row, right
-#define X_RM &none // middle row, right
+#define X_RT &kp LS(LC(LALT)) // top row, right
+#define X_RM &key_repeat // middle row, right
 #define X_RB &none // bottom row, right
 #define X_RH &none // thumb row, right
 

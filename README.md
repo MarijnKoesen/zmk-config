@@ -3,6 +3,14 @@
 ![My ZMK Config](/keymap.svg)
 
 
+## Flashin
+
+* Press the RESET button twice
+* The `NICENANO` volume should now be mounted
+* Copy the `.uf2` file onto the volume
+* Wait for the device to be gone
+* Press the reset button once
+
 
 ## Inspiration
 

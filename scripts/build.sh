@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 # The easy way to run this is using docker:
 #   $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.2 /bin/bash
 #   #) cd /code
@@ -7,6 +8,14 @@
 set -e
 
 cd "$(dirname "$0")/../"
+
+if [[ ! -d "/code" ]]; then
+    echo "The folder /code does not exist, should you be running this from docker?"
+    echo " $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.2 /bin/bash"
+    echo " #) cd /code"
+    echo " #) ./scripts/compile.sh"
+    exit 1
+fi
 
 compile() {
     cd /code/zmk
