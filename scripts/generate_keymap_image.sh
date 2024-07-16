@@ -1,4 +1,5 @@
 #!/bin/sh
+# This requires: https://github.com/hnaderi/keymap-drawer/
 
 cd "$(dirname "$0")/../"
 
