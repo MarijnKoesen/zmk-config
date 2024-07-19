@@ -12,16 +12,35 @@
 #     shield: reviung41
 #
 ---
+# See: https://github.com/zmkfirmware/zmk/blob/main/.github/workflows/build-user-config.yml
 include:
+  # Ferris sweep
   - board: nice_nano_v2
     shield: cradio_left
+    artifact-name: ferris_sweep_left-nice_nano_v2-zmk
   - board: nice_nano_v2
     shield: cradio_left_patched_broken_pin6
+    artifact-name: ferris_sweep_left_patched_broken_pin_6_left-nice_nano_v2-zmk
   - board: nice_nano_v2
     shield: cradio_right
+    artifact-name: ferris_sweep_right-nice_nano_v2
+
+  # Corne
   - board: nice_nano_v2
     shield: corne_left
+    artifact-name: corne_left_nice_nano_v2
   - board: nice_nano_v2
     shield: corne_right
+    artifact-name: corne_right_nice_nano_v2
+  - board: nice_nano_v2
+    shield: corne_left
+    snippet: zmk-usb-logging
+    artifact-name: corne_left_nice_nano_v2_with_logging
+  - board: nice_nano_v2
+    shield: corne_right
+    snippet: zmk-usb-logging
+    artifact-name: corne_right_nice_nano_v2_with_logging
+
+  # Reset
   - board: nice_nano_v2
     shield: settings_reset
