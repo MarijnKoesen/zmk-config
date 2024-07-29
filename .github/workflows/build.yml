@@ -2,6 +2,24 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      archive_name: marijn-koesen-zmk-firmware
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+        with:
+          archive_name: marijn-koesen-zmk-firmware
+
+      - name: Rename artifacts
+        shell: sh -x {0}
+        run: |
+          mkdir "${{ env.build_dir }}/artifacts-keymap"
+          if [ -f "${{ env.build_dir }}/zephyr/zephyr.dts" ]
+          then
+            cp "${{ env.build_dir }}/zephyr/zephyr.dts" "${{ env.build_dir }}/artifacts-keymap/${{ env.artifact_name }}.dts"
+          fi
+
+      - name: Archive (${{ env.display_name }})
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifact-${{ env.artifact_name }}
+          path: ${{ env.build_dir }}/artifacts-keymap
