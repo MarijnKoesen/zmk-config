@@ -9,7 +9,13 @@
 /* right of right half */
 #define X_RT &kp LS(LC(LALT)) // top row, right
 #define X_RM &key_repeat // middle row, right
-#define X_RB &none // bottom row, right
 #define X_RH &none // thumb row, right
+#define X_RB &to 0 // bottom row, right, layer 0
+
+#define X_LB0 &to 2 // bottom row, left, layer 0
+#define X_LB1 &to 1 // bottom row, left, layer 1
+#define X_LB2 &to 2 // bottom row, right, layer 2
+#define X_LB3 &to 3 // bottom row, left, layer 3
+#define X_LB4 &to 4 // bottom row, right, layer 4
 
 #include "base.keymap"

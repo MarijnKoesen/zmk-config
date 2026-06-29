@@ -9,6 +9,13 @@ My [ferris-sweep keymap](/keymap.ferris-sweep.svg) is the same, minus the extra 
 
 ## Flashing the microcontroller
 
+### Building
+
+* `scripts/build.sh`
+
+
+### Flashing
+
 * Press the RESET button twice
 * The `NICENANO` volume should now be mounted in your OS
 * Copy the `.uf2` file onto the volume
