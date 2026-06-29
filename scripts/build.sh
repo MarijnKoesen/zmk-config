@@ -1,9 +1,13 @@
 #!/bin/bash
 #
 # The easy way to run this is using docker:
-#   $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.2 /bin/bash
+#   $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.5 /bin/bash
+#   #) cd /code/zmk/
+    #) west update -l
 #   #) cd /code
-#   #) ./scripts/compile.sh
+#   #) ./scripts/build.sh
+#
+# If you get errors building, delete the old builds in /code/build/ and try again
 #  
 set -e
 
@@ -11,9 +15,13 @@ cd "$(dirname "$0")/../"
 
 if [[ ! -d "/code" ]]; then
     echo "The folder /code does not exist, should you be running this from docker?"
-    echo " $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.2 /bin/bash"
+    echo ""
+    echo "The easy way to run this is using docker:"
+    echo " $) docker run -v.:/code -it zmkfirmware/zmk-dev-arm:3.5 /bin/bash"
+    echo " #) cd /code/zmk/ (if the 'zmk' folder does not exist, clone 'github.com/zmkfirmware/zmk' there)"
+    echo " #) west update"
     echo " #) cd /code"
-    echo " #) ./scripts/compile.sh"
+    echo " #) ./scripts/build.sh"
     exit 1
 fi
 
